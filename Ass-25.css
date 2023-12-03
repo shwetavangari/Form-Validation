@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    padding-bottom: 3rem;
+    background-color: lightgray;
+}
+.main-box{
+    width: 100%;
+    height: auto;
+}
+.main-box h1{
+    padding: 3rem 0;
+    background-color: lightgray;
+    text-align: center;
+    color: rgb(174, 50, 174);
+}
+.main-box .inner-box{
+    width: 70%;
+    height: 400px;
+    background-color: lightgray;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr)); 
+    /* row-gap: 1rem; */
+    /* gap: 1rem; */
+}
+.inner-box .box1{
+    background-color: pink;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.inner-box .box2{
+    background-color: rgb(174, 50, 174);
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+.box2 h2{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 1rem;
+}
+.form{
+    width: 90%;
+    height: auto;
+    background-color: rgba(246, 245, 245, 0.919);
+    margin: 0 auto;
+    padding-top: .5rem;
+    border-radius: 3px;
+    padding-bottom: 2rem;
+}
+.form .input1{
+    width: 92%;
+    height: auto;
+    /* padding: .5rem; */
+    margin: 0 auto;
+    /* background-color: aqua; */
+    padding-bottom: 1rem;
+}
+.input1 p{
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: .4rem;
+}
+.input1 input{
+    width: 100%;
+    height: 2rem;
+    padding-left: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-transform: capitalize; */
+    outline: none;
+}   
+.input1 input:focus{
+    box-shadow: 0px 0px 7px rgb(174, 50, 174);
+    outline: none;
+    border: none;
+}
+.form #errormsg{
+    text-align: center;
+    color: red;
+    font-size: 15px;
+    font-weight: 570;
+}
+/* .form .successmsg{
+    text-align: center;
+    color: green;
+    font-size: 15px;
+    font-weight: 570;
+} */
+.anim{
+    /* box-shadow: 0px 0px 5px red;
+    border: none;
+    outline: none; */
+}
+@keyframes errorAnimation{
+    0%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.box2 .btn{
+    width: 92%;
+    /* background-color: aqua; */
+    margin: .5rem auto;
+    text-align: center;
+}
+.btn button{
+    padding: .5rem 3rem;
+    text-align: center;
+    background-color: rgb(174, 50, 174);
+    border: 2px solid rgb(174, 50, 174);
+    outline: none;
+    /* border: none; */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    border-radius: 3px;
+}
+.btn button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(174, 50, 174);
+    color: rgb(174, 50, 174);
+    
+}
